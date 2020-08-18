@@ -1,24 +1,14 @@
 body {
     margin: 0;
-    
 }
-/* Style the header -- FIX the length*/
-.flex-headerBar {
-    background: rgb(9,25,107);
+
+/* Grid Method -- header styling */
+.grid-headerBar {
     background: linear-gradient(90deg, rgba(9,25,107,1) 0%, rgba(34,91,193,1) 35%, rgba(0,212,255,1) 100%);
-}
-
-/* Flexbox headerbar styling */
-.flex-headerBar {
-    display: flex;
-}
-
-.flex-title {
-    flex: 1;
-}
-
-.flex-title:first-child {
-    margin-right: 60%;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: space-around;
 }
 
 /* Style the navbar */
@@ -69,7 +59,7 @@ body {
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 185px; /* Set the width of the sidebar */
+    width: 200px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 130px; /* Stay at the top */
