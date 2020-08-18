@@ -4,11 +4,22 @@ body {
 
 /* Grid Method -- header styling */
 .grid-headerBar {
-    background: linear-gradient(90deg, rgba(9,25,107,1) 0%, rgba(34,91,193,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(270deg, rgba(9,25,107,1) 0%, rgba(34,91,193,1) 35%, rgba(0,212,255,1) 100%);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    justify-content: space-around;
+    grid-gap: 0;
+}
+
+.grid-title1 {
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.grid-title2 {
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 25px;
 }
 
 /* Style the navbar */
@@ -47,7 +58,7 @@ body {
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
-    top: 20px;
+    top: 0;
     width: 100%;
 }
   
@@ -62,7 +73,7 @@ body {
     width: 200px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 130px; /* Stay at the top */
+    top: 120px; /* Stay at the top */
     right: 0;
     background-color: #111; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
@@ -87,7 +98,7 @@ body {
 /* Style page content */
 .post {
     margin-right: 195px; /* Same as the width of the sidebar */
-    padding: 0px 10px;    
+    padding: 0px 10px;
 }
   
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
