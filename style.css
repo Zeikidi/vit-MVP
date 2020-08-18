@@ -1,14 +1,30 @@
-
-/* Style the header */
-.headerBar {
-    background-image: height url(./img/Header.png);
+body {
+    margin: 0;
     
+}
+/* Style the header -- FIX the length*/
+.flex-headerBar {
+    background: rgb(9,25,107);
+    background: linear-gradient(90deg, rgba(9,25,107,1) 0%, rgba(34,91,193,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+/* Flexbox headerbar styling */
+.flex-headerBar {
+    display: flex;
+}
+
+.flex-title {
+    flex: 1;
+}
+
+.flex-title:first-child {
+    margin-right: 60%;    
 }
 
 /* Style the navbar */
 #navbar {
     overflow: hidden;
-    background-color: rgb(43, 120, 165);
+    background-color: rgb(20, 22, 24);
 }
   
 /* Navbar links */
@@ -41,7 +57,7 @@
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
-    top: 0;
+    top: 20px;
     width: 100%;
 }
   
@@ -53,15 +69,15 @@
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 169px; /* Set the width of the sidebar */
+    width: 185px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 20; /* Stay at the top */
+    top: 130px; /* Stay at the top */
     right: 0;
     background-color: #111; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
-    margin-right: 8px;
+    margin-right: 0px;
 }
   
 /* The navigation menu links */
@@ -80,8 +96,8 @@
   
 /* Style page content */
 .post {
-    margin-right: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+    margin-right: 195px; /* Same as the width of the sidebar */
+    padding: 0px 10px;    
 }
   
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -93,7 +109,7 @@
 #main-footer{
     text-align: center;
     font-size:18px;
-    margin-right: 160px; /* Same as the width of the sidebar */
+    margin-right: 195px; /* Same as the width of the sidebar */
     font-style: italic;
     color: #818181;
 }
