@@ -15,3 +15,10 @@ function myFunction() {
     headerContainer.classList.remove("sticky");
   }
 }
+
+dateHax();
+
+function dateHax() {
+  var dt = new Date();
+  document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+}

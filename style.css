@@ -18,7 +18,7 @@ body {
 
 .grid-title2 {
     text-align: right;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-right: 25px;
 }
 
@@ -97,6 +97,12 @@ body {
   
 /* Style page content */
 .post {
+    margin-right: 195px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+.postZero {
+    margin-top: 150px;
     margin-right: 195px; /* Same as the width of the sidebar */
     padding: 0px 10px;
 }
