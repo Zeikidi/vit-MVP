@@ -6,7 +6,7 @@ body {
 .grid-headerBar {
     background: linear-gradient(270deg, rgba(9,25,107,1) 0%, rgba(34,91,193,1) 35%, rgba(0,212,255,1) 100%);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0;
 }
 
@@ -14,6 +14,15 @@ body {
     text-align: left;
     margin-top: 5px;
     margin-left: 15px;
+}
+
+.grid-midTitle {
+    text-align: center;
+    margin-top: auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 30px;
+    color: rgba(240, 87, 26, 0.897);
+    text-shadow: 2px 2px #282a2e
 }
 
 .grid-title2 {
@@ -94,19 +103,36 @@ body {
 .sidenav a:hover {
     color: #f1f1f1;
 }
-  
+
+h3 {
+    font-family: 'Kaushan Script', cursive;
+}
+
 /* Style page content */
 .post {
-    margin-right: 195px; /* Same as the width of the sidebar */
+    margin-right: 250px; /* Give space for sidebars */
+    margin-left: 250px;
     padding: 0px 10px;
+    font-family: 'Courgette', cursive;
 }
 
 .postZero {
     margin-top: 150px;
-    margin-right: 195px; /* Same as the width of the sidebar */
+    margin-right: 250px; /* Give space for sidebars */
+    margin-left: 250px;
     padding: 0px 10px;
+    font-family: 'Courgette', cursive;
 }
-  
+
+/* Gradient transparent - color - transparent */
+.hrStyle {
+    margin-left: 250px;
+    margin-right: 250px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
 .sidenav {padding-top: 15px;}
@@ -116,7 +142,8 @@ body {
 #main-footer{
     text-align: center;
     font-size:18px;
-    margin-right: 195px; /* Same as the width of the sidebar */
+    margin-right: 250px; /* Give space for sidebars */
+    margin-left: 250px;
     font-style: italic;
     color: #818181;
 }

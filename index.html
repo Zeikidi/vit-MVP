@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Project</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Load fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
     <!-- Load an icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-  <div display="block" id="headerContainer">
-    <!-- Grid method used for headerbar elements -->    
-    <div class="grid-headerBar">
-      <div class="grid-title1">
-        <img src="./img/zen med.png" alt="zen meditation" width="69px">            
-      </div>
-        <div class="grid-title2">
-          <img src="./img/FB.png" alt="FB" width="35px">
-          <img src="./img/TW.png" alt="Tweet" width="35px">
-          <img src="./img/IG.png" alt="IG" width="35px">
-          <img src="./img/Reddit.png" alt="Reddit" width="35px">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div display="block" id="headerContainer">
+      <!-- Grid method used for headerbar elements -->
+      <div class="grid-headerBar">        
+        <div class="grid-title1">
+          <img src="./img/zen med.png" alt="zen meditation" width="69px" />
         </div>
-    </div>
+        <p class="grid-midTitle">Traditional Meditation Blog 🕉</p>
+        <div class="grid-title2">
+          <img src="./img/FB.png" alt="FB" width="35px" />
+          <img src="./img/TW.png" alt="Tweet" width="35px" />
+          <img src="./img/IG.png" alt="IG" width="35px" />
+          <img src="./img/Reddit.png" alt="Reddit" width="35px" />
+        </div>
+      </div>
       <div id="navbar">
         <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
         <a href="#about">About</a>
@@ -29,58 +36,121 @@
         <a href="#meditation">Meditation</a>
         <a href="#resources">Resources</a>
         <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-        <input type="text" id="search" autocomplete="off" placeholder="Search">
+        <input
+          type="text"
+          id="search"
+          autocomplete="off"
+          placeholder="Search"
+        />
       </div>
-  </div>
+    </div>
 
-  <!-- Side navigation bar-->
-  <div class="sidenav">
-    <a href="#">Relaxation</a>
-    <a href="#">Postures</a>
-    <a href="#">Breathing</a>
-    <a href="#">Concentration</a>
-    <a href="#">Mantra</a>
-    <a href="#">Meditation</a>
-  </div>
+    <!-- Side navigation bar-->
+    <div class="sidenav">
+      <a href="#">Relaxation</a>
+      <a href="#">Postures</a>
+      <a href="#">Breathing</a>
+      <a href="#">Concentration</a>
+      <a href="#">Mantra</a>
+      <a href="#">Meditation</a>
+    </div>
 
-  <div>
-    <section>
-      <article class="postZero">
-        <h3>Blog Post One</h3>
-        <small>Posted by Dan on August 15</small>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="post.html">Read More</a>
-      </article>
-  
-      <article class="post">
-        <h3>Blog Post Two</h3>
-        <small>Posted by Dan on August 16</small>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="post.html">Read More</a>
-      </article>
-  
-      <article class="post">
-        <h3>Blog Post Three</h3>
-        <small>Posted by Dan on August 17</small>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="post.html">Read More</a>
-      </article>        
-        
-      <article class="post">
-        <h3>Blog Post Special</h3>
-        <small>Posted by Dan on August 18</small>
-        <p style="text-align:center;">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/JslvBcIVtDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </p>
-      </article>
-    </section>
-  </div>
+    <div>
+      <section>
+        <article class="postZero">
+          <h3>What Is Meditation?</h3>
+          <small>Posted by Dan on August 15</small>
+          <p>
+            Meditation is the flow of continuous thought of one thing.
+            Meditation is the keeping of one idea alone always like the
+            continuous flow of oil from one vessel to another. A continuous flow
+            of perception or thought is Dhyana or meditation. Meditation is a
+            mysterious ladder which reaches from earth to heaven, from error to
+            truth, from darkness to light, from pain to bliss, from restlessness
+            to abiding peace, from ignorance to knowledge, from mortality to
+            immortality. Meditation leads to Knowledge of the Self which brings
+            about eternal peace, supreme bliss. Meditation prepares you for the
+            integral experience or direct intuitive knowledge.
+          </p>
+          <a href="post.html">Read More</a>
+        </article>
+        <br>
+        <hr class="hrStyle">
+        <article class="post">
+          <h3>What Is Concentration?</h3>
+          <small>Posted by Dan on August 16</small>
+          <p>
+            A baby's eyes are riveted on a flower or a butterfly. It keeps
+            looking at the object with unwinking eyes, eyes full of wonder, for
+            minutes together.
+          </p>
+          <p>
+            A mother calls her teenage daughter to go and have lunch, but there
+            is no response. The call is repeated twice, thrice; still there is
+            no response. The girl just does not hear, though her ears are very
+            much open. Nor is she deaf. What could be the reason, then, for her
+            not hearing? Her mind is immersed in a Sherlock Holmes or a Harold
+            Robbins; her eyes are glued to the lines; her face is buried in the
+            book.
+          </p>
+          <p>
+            In the dilapidated building of an elementary school, the class is
+            on. The teacher explains something and then asks the children, "Did
+            it enter?". There is an instant response from the backmost bench:
+            "Only the tail has not entered yet!". The earnest voice belongs to a
+            boy who has been all along intently watching the struggle of a rat
+            to wriggle out of the class room through a hole in the wall. It has
+            managed to squeeze in its body, but its tail is still not gone in.
+            Perhaps the hole is blocked.
+          </p>
+          <p>
+            These are everyday examples of concentration. Attention,
+            concentration, meditation-these are different degrees of the same
+            process. It is fixing the mind on a single object or idea to the
+            exclusion of everything else.
+          </p>
+          <a href="post.html">Read More</a>
+        </article>
+        <br>
+        <hr class="hrStyle">
+        <article class="post">
+          <h3>Blog Post Three</h3>
+          <small>Posted by Dan on August 17</small>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <a href="post.html">Read More</a>
+        </article>
+        <br>
+        <hr class="hrStyle">
+        <article class="post">
+          <h3>Blog Post - Video</h3>
+          <small>Posted by Dan on August 18</small>
+          <p style="text-align: center;">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/JslvBcIVtDg"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </p>
+        </article>
+      </section>
+    </div>
 
-  <footer id="main-footer">
-    <p>Copyright &copy; 2020 Meditation Made EZ. All Rights Reserved</p>
-    <p>Date last updated: <span id="datetime"></span></p>
-  </footer>
+    <footer id="main-footer">
+      <p>Copyright &copy; 2020 Meditation Made EZ. All Rights Reserved</p>
+      <p>Date last updated: <span id="datetime"></span></p>
+    </footer>
 
-  <script src="./main.js"></script>
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>
