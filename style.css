@@ -189,6 +189,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    border-radius: 16px;
 }
 
 /* Gradient transparent - color - transparent */
